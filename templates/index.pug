@@ -2,8 +2,11 @@ extends include/layout.pug
 
 block content
   header.masthead
-    .container
-      .intro-text
-        .intro-lead-in Welcome To Our Studio!
-        .intro-heading.text-uppercase It's Nice To Meet You
-        a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-lg-8.mx-auto
+          .intro-text.align-self-center
+            .intro-lead-in Perjuangkan dan Dukung Kebaikan di Seluruh Dunia!
+            hr.separator
+            a.btn.btn-primary.btn-xl.mr-3(href='#get-started') Buat Program
+            a.btn.btn-outline-info.btn-xl.js-scroll-trigger(href='#campaigns') Mulai Berdonasi

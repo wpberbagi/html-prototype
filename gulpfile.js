@@ -20,9 +20,9 @@ const pkg = require('./package.json');
 
 // Set the banner content
 const banner = ['/*!\n',
-	' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-	' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-	' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
+	' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+	' * Copyright ' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+	' * Licensed under <%= pkg.license %>\n',
 	' */\n',
 	'\n'
 ].join('');
@@ -57,12 +57,6 @@ function modules() {
 	// Remixicon
 	var remixicon = gulp.src('./node_modules/remixicon/fonts/*')
 		.pipe(gulp.dest('./dist/vendor/remixicon'))
-	// // Font Awesome CSS
-	// var fontAwesomeCSS = gulp.src('./node_modules/@fortawesome/fontawesome-free/css/**/*')
-	// 	.pipe(gulp.dest('./dist/vendor/fontawesome-free/css'));
-	// // Font Awesome Webfonts
-	// var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
-	// 	.pipe(gulp.dest('./dist/vendor/fontawesome-free/webfonts'));
 	// jQuery Easing
 	var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
 		.pipe(gulp.dest('./dist/vendor/jquery-easing'));
@@ -88,7 +82,7 @@ function pugToHtml() {
 // Image minify
 function imageminify(){
 	return gulp
-		.src('./img/*')
+		.src(['./img/*','./img/*/*'])
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img'))
 }
@@ -142,7 +136,7 @@ function js() {
 // Watch files
 function watchFiles() {
 	gulp.watch("./scss/**/*", css);
-	gulp.watch("./img/*", imageminify);
+	gulp.watch(["./img/*","./img/*/*"], imageminify);
 	gulp.watch(["./templates/*", './templates/*/*'], pugToHtml);
 	gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
 	gulp.watch("./**/*.html", browserSyncReload);
