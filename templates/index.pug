@@ -8,5 +8,22 @@ block content
           .intro-text.align-self-center
             .intro-lead-in Perjuangkan dan Dukung Kebaikan di Seluruh Dunia!
             hr.separator
-            a.btn.btn-primary.btn-xl.mr-3(href='#get-started') Buat Program
-            a.btn.btn-outline-info.btn-xl.js-scroll-trigger(href='#campaigns') Mulai Berdonasi
+            .actions
+              a.btn.btn-primary.btn-xl(href='register.html') Buat Program
+              a.btn.btn-outline-info.btn-xl.js-scroll-trigger(href='#campaigns') Mulai Berdonasi
+  section#campaigns
+    .container
+      .row.mb-5
+        .col-lg-8.mx-auto.text-center
+          h2.section-heading Dukung Kebaikan
+          p.lead Mari dukung mereka mewujudkan kebaikan di seluruh dunia
+      .row
+        .col-md-6.col-lg-4
+          include include/campaign-item.pug
+        .col-md-6.col-lg-4
+          include include/campaign-item.pug
+        .col-md-6.col-lg-4
+          include include/campaign-item.pug
+        .col-md-6.col-lg-4
+          include include/campaign-item.pug
+  section
