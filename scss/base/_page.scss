@@ -1,7 +1,8 @@
 // Global styling for this template
 body {
 	overflow-x: hidden;
-	@include body-font;
+	// @include body-font;
+	color: $gray-800;
 }
 
 p {
@@ -29,26 +30,25 @@ h6 {
 	@include heading-font;
 }
 
-.page-section {
-	padding: 100px 0;
+section {
+	padding: 70px 0;
 	h2.section-heading {
-		font-size: 40px;
+		font-size: 24px;
 		margin-top: 0;
 		margin-bottom: 15px;
 	}
-	h3.section-subheading {
-		font-size: 16px;
-		font-weight: 400;
-		font-style: italic;
-		margin-bottom: 75px;
-		text-transform: none;
-		@include serif-font;
+	p.lead {
+		color: $gray-600;
+		@include subhead-font;
 	}
 }
 
 @media(min-width: 768px) {
 	section {
 		padding: 100px 0;
+		h2.section-heading {
+			font-size: 32px;
+		}
 	}
 }
 

@@ -3,15 +3,15 @@
 // Restated Bootstrap Variables
 
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
+$gray-100: darken($white, 10%) !default;
+$gray-200: darken($gray-100, 10%) !default;
+$gray-300: darken($gray-200, 10%) !default;
+$gray-400: darken($gray-300, 10%) !default;
+$gray-500: darken($gray-400, 10%) !default;
+$gray-600: darken($gray-500, 10%) !default;
+$gray-700: darken($gray-600, 10%) !default;
+$gray-800: darken($gray-700, 10%) !default;
+$gray-900: darken($gray-800, 10%) !default;
+$black: darken($gray-900, 10%) !default;
 
 $primary: #fe732b !default;
