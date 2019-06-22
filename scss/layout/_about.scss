@@ -12,3 +12,20 @@
         }
     }
 }
+
+@media (min-width: 768px){
+    #about-us {
+        .container {
+            .row {
+                .img-col {
+                    margin-bottom: 0;
+                }
+                .text-col {
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
