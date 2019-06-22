@@ -71,7 +71,7 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
 			padding-left: $b-height + $b-margin-top;
 			height: 100%;
 			margin-right: calc(100% - 420px);
-			background-color: $gray-200;
+			background-color: $gray-50;
 			box-shadow: 0 5px 15px 10px rgba(0, 0, 0, .1);
 		}
 		li {
@@ -92,12 +92,6 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
 				text-decoration: none;
 				transition: $b-transition;
 				width: auto;
-				//
-				//&:hover,
-				//&--active {
-				//	border-left: color(complement) solid $b-border-width;
-				//	padding-left: $b-txt-pad;
-				//}
 			}
 		}
 		li:not(.open) {
@@ -206,7 +200,7 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
 			.b-menu {
 				border-color: color(complement);
 				box-shadow: none;
-				background-color: $gray-200;
+				background-color: $gray-50;
 			}
 		}
 		&.shrink:not(.open),
