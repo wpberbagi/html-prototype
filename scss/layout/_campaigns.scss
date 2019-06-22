@@ -2,7 +2,13 @@
     .row.campaigns {
         .campaign-item {
             padding-bottom: 1rem;
+            margin-bottom: 1rem;
             .card {
+                @include box-shadow(0, .5rem, 1rem, 0, $gray-50);
+                .card-img-top {
+                    height: 200px;
+                    object-fit: cover;
+                }
                 .card-body {
                     padding-bottom: 150px;
                     .card-title {

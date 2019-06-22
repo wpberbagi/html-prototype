@@ -3,15 +3,25 @@
 // Restated Bootstrap Variables
 
 $white: #fff !default;
-$gray-100: darken($white, 10%) !default;
-$gray-200: darken($gray-100, 10%) !default;
-$gray-300: darken($gray-200, 10%) !default;
-$gray-400: darken($gray-300, 10%) !default;
-$gray-500: darken($gray-400, 10%) !default;
-$gray-600: darken($gray-500, 10%) !default;
-$gray-700: darken($gray-600, 10%) !default;
-$gray-800: darken($gray-700, 10%) !default;
-$gray-900: darken($gray-800, 10%) !default;
-$black: darken($gray-900, 10%) !default;
+$gray-50: darken($white, 5%) !default;
+$gray-100: darken($gray-50, 10%) !default;
+$gray-150: darken($gray-100, 10%) !default;
+$gray-200: darken($gray-150, 5%) !default;
+$gray-250: darken($gray-200, 5%) !default;
+$gray-300: darken($gray-250, 5%) !default;
+$gray-350: darken($gray-300, 5%) !default;
+$gray-400: darken($gray-350, 5%) !default;
+$gray-450: darken($gray-400, 5%) !default;
+$gray-500: darken($gray-450, 5%) !default;
+$gray-550: darken($gray-500, 5%) !default;
+$gray-600: darken($gray-550, 5%) !default;
+$gray-650: darken($gray-600, 5%) !default;
+$gray-700: darken($gray-650, 5%) !default;
+$gray-750: darken($gray-700, 5%) !default;
+$gray-800: darken($gray-750, 5%) !default;
+$gray-850: darken($gray-800, 5%) !default;
+$gray-900: darken($gray-850, 5%) !default;
+$gray-950: darken($gray-900, 5%) !default;
+$black: darken($gray-900, 5%) !default;
 
 $primary: #fe732b !default;
