@@ -1,5 +1,6 @@
 // Button Styles
-.btn {
+.btn-lg,
+.btn-xl {
 	@include heading-font;
 }
 
@@ -22,5 +23,24 @@
 	&:active,
 	&:focus {
 		box-shadow: 0 0 0 0.2rem rgba($primary, .5) !important;
+	}
+}
+
+.btn-more {
+	color: $gray-700;
+	padding: 0 1rem;
+	@include transition-all(.2s);
+	i{
+		@include transition-all(.2s);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		padding-right: 0;
+		color: $gray-700;
+		text-decoration: none;
+		i {
+			margin-left: 1rem;
+		}
 	}
 }

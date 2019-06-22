@@ -22,3 +22,10 @@
 @mixin heading-font {
 	font-family: 'Roboto', sans-serif;
 }
+
+@mixin transition-all($duration) {
+	transition: all $duration;
+	-o-transition: all $duration;
+	-moz-transition: all $duration;
+	-webkit-transition: all $duration;
+}
