@@ -37,11 +37,11 @@
 
   // Collapse Navbar
   var navbarCollapse = function () {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
+    if ($(".navbar2 .b-container").offset().top > 100) {
+			$(".navbar2 .b-container").addClass("shrink");
+		} else {
+			$(".navbar2 .b-container").removeClass("shrink");
+		}
   };
   // Collapse now if page is not at top
   navbarCollapse();
