@@ -1,44 +1,87 @@
 extends include/layout.pug
 
 block content
+  // Header
   header.masthead
     .container.h-100
       .row.h-100.align-items-center
         .col-lg-8.mx-auto
           .intro-text.align-self-center
-            .intro-lead-in Perjuangkan dan Dukung Kebaikan di Seluruh Dunia!
+            .intro-lead-in Fundraising to help you achive your biggest dreams
             hr.separator
             .actions
-              a.btn.btn-primary.btn-xl(href='register.html') Mulai WPBerbagi
-              a.btn.btn-outline-info.btn-xl.js-scroll-trigger(href='#campaigns') Mulai Berdonasi
+              a.btn.btn-primary.btn-xl(href='register.html') Get Started Now
+              a.btn.btn-outline-info.btn-xl.js-scroll-trigger(href='#campaigns') I Want To Support
+  // Campaign
   section#campaigns
     .container
       .row.mb-5
         .col-lg-8.mx-auto.text-center
-          h2.section-heading Dukung Kebaikan
-          p.lead Mari dukung mereka mewujudkan kebaikan di seluruh dunia
+          h2.section-heading Support Goodness
+          p.lead Let's support them achive their biggest dreams.
       .row.campaigns
+        //- Campaign #1
         .col-md-6.col-lg-4.campaign-item
-          include include/campaign-item.pug
+          .card.h-100
+            img.card-img-top(src='img/image1.jpg')
+            .card-body
+              h4.card-title Lorem ipsum dolor sit amet
+              p.card-text Sed consequat felis nibh, ac ultricies diam bibendum vitae. Mauris at vehicula risus.
+              .bottom-content
+                  .progress.mb-3
+                      .progress-bar.bg-primary(role='progressbar', aria-valuenow='11', aria-valuemin='0', aria-valuemax='100', style='width: 11%')
+                  p.info $500 collected of $4.500
+                  a(href='campaign-single.html').btn.btn-primary.btn-lg.btn-block See more
+        //- Campaign #2
         .col-md-6.col-lg-4.campaign-item
-          include include/campaign-item.pug
+          .card.h-100
+            img.card-img-top(src='img/image2.jpg')
+            .card-body
+              h4.card-title Etiam sit amet efficitur orci, eu feugiat est
+              p.card-text Pellentesque a commodo mauris. In eu est sollicitudin, dignissim sapien id, pretium nisi. Donec vitae augue nunc.
+              .bottom-content
+                  .progress.mb-3
+                      .progress-bar.bg-primary(role='progressbar', aria-valuenow='19.5', aria-valuemin='0', aria-valuemax='100', style='width: 19.5%')
+                  p.info $15.600 collected of $80.000
+                  a(href='campaign-single.html').btn.btn-primary.btn-lg.btn-block See more
+        //- Campaign #3
         .col-md-6.col-lg-4.campaign-item
-          include include/campaign-item.pug
+          .card.h-100
+            img.card-img-top(src='img/image3.jpg')
+            .card-body
+              h4.card-title Suspendisse metus ex, molestie non feugiat sit amet
+              p.card-text In ut augue ac nisl lobortis imperdiet. Maecenas ut magna at mauris venenatis congue.
+              .bottom-content
+                  .progress.mb-3
+                      .progress-bar.bg-primary(role='progressbar', aria-valuenow='87', aria-valuemin='0', aria-valuemax='100', style='width: 87%')
+                  p.info $26.120 collected of $30.000
+                  a(href='campaign-single.html').btn.btn-primary.btn-lg.btn-block See more
+        //- Campaign #4
         .col-md-6.col-lg-4.campaign-item
-          include include/campaign-item.pug
+          .card.h-100
+            img.card-img-top(src='img/image4.jpg')
+            .card-body
+              h4.card-title Lorem ipsum dolor sit amet
+              p.card-text Morbi bibendum ultricies diam ut malesuada. Ut id erat ac ante efficitur sollicitudin sit amet sed turpis.
+              .bottom-content
+                  .progress.mb-3
+                      .progress-bar.bg-primary(role='progressbar', aria-valuenow='7.3', aria-valuemin='0', aria-valuemax='100', style='width: 7.3%')
+                  p.info $1.500 collected of $20.500
+                  a(href='campaign-single.html').btn.btn-primary.btn-lg.btn-block See more
       .row.mt-3
         .col.text-right
           a(href='campaigns.html').btn.btn-link.btn-more
-            | Lihat semua 
+            | Browse all
             i.remixicon-arrow-right-s-line
+  // About Us
   section#about-us.bg-light
     .container
       .row
         .col-lg-5.img-col
-          img(src='img/slider/slider1.jpg').img-fluid
+          img(src='img/image3.jpg').img-fluid
         .col-lg-7.text-col
-          h2.section-heading.alt.text-uppercase Tentang Kami
-          h3.section-subheading Mari Sebarkan Kebaikan
+          h2.section-heading.alt.text-uppercase About Us
+          h3.section-subheading Let's Spread Good Thing Around The World
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a diam quis sapien placerat posuere. Sed commodo ullamcorper nisl vel placerat. Aliquam molestie ultrices consequat. Proin finibus turpis nec luctus condimentum. Fusce ut cursus sem. Fusce a diam quis sapien placerat posuere.
           ul.social-networks.mt-3
             li.facebook
@@ -56,62 +99,69 @@ block content
             li.telegram
               a(href='#')
                 i.remixicon-telegram-line
-          a(href='about.html').btn.btn-primary.btn-lg Selengkapnya
+          a(href='about.html').btn.btn-primary.btn-lg Read more
+  // Features
   section#features
     .container
       .row.mb-5
         .col-lg-8.mx-auto.text-center
-          h2.section-heading Perjuangan Kebaikan Dengan Mudah
+          h2.section-heading Fight Your Biggest Dream, The World Will Help
       .row
+        //- Feature #1
         .col-12.col-md-6.col-lg-4.feature-item
           .row
             .col-2.col-img
               i.remixicon-earth-fill
             .col-10.text-left.col-text
-              h4 Berbasis Online
+              h4 Online Globally
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit suscipit libero tellus vitae augue.
+        //- Feature #2
         .col-12.col-md-6.col-lg-4.feature-item
           .row
             .col-2.col-img
               i.remixicon-settings-2-fill
             .col-10.text-left.col-text
-              h4 Bebas Konfigurasi
+              h4 Easy Configuration
               p Nunc efficitur, odio eget porttitor venenatis, tellus magna efficitur mi, ultrices suscipit libero.
+        //- Feature #3
         .col-12.col-md-6.col-lg-4.feature-item
           .row
             .col-2.col-img
               i.remixicon-money-dollar-circle-fill
             .col-10.text-left.col-text
-              h4 Bebas Biaya
+              h4 Free Charge
               p Cras vel ullamcorper massa. Sed cursus faucibus lacus, a placerat tellus dignissim sed nuisque.
+        //- Feature #4
         .col-12.col-md-6.col-lg-4.feature-item
           .row
             .col-2.col-img
               i.remixicon-bar-chart-2-fill
             .col-10.text-left.col-text
-              h4 Jangkauan Luas
+              h4 Social Network Boost
               p Quisque sit amet sapien felis. Fusce efficitur ornare semper. Etiam nec odio at mi tincidunt.
+        //- Feature #5
         .col-12.col-md-6.col-lg-4.feature-item
           .row
             .col-2.col-img
               i.remixicon-customer-service-fill
             .col-10.text-left.col-text
-              h4 Bebas Konsultasi
+              h4 Free Support
               p Phasellus sit amet purus tristique, dictum augue a, aliquam mauris. Morbi congue massa sit amet.
+        //- Feature #6
         .col-12.col-md-6.col-lg-4.feature-item
           .row
             .col-2.col-img
               i.remixicon-trophy-fill
             .col-10.text-left.col-text
-              h4 Tanpa Penalti
+              h4 Without Penalty
               p Praesent aliquam nunc id sodales bibendum. Aenean finibus varius justo quis eleifend gonec interdum.
       .row
         .col.text-center
-          a(href='register.html').btn.btn-primary.btn-lg Mulai WPberbagi
+          a(href='register.html').btn.btn-primary.btn-lg Get Started Now
   section#get-started.bg-light
     .container
       .row.align-items-center.justify-content-center
         .col-auto
-          h2.section-heading Siap Untuk Memperjuangkan Kebaikan?
+          h2.section-heading Ready to fight your biggest dream?
         .col-auto
-          a(href='register.html').btn.btn-primary.btn-lg Mulai WPBerbagi
+          a(href='register.html').btn.btn-primary.btn-lg Get Started Now
