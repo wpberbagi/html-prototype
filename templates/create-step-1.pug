@@ -1,0 +1,20 @@
+extends include/layout.pug
+
+block content
+    section#step-1.create-step
+        .container
+            .row
+                .col-lg-8.mx-auto
+                    .card
+                        .card-body
+                            include include/nav-step.pug
+                            form(action="create-step-2.html").form-step
+                                .form-group
+                                    label(for="category") Category
+                                    select(name='category')#category.form-control
+                                        option Category 1
+                                        option Category 2
+                                .form-group
+                                    label(for="title") Title
+                                    input(type="text")#title.form-control
+                                button.btn.btn-primary.btn-lg Continue

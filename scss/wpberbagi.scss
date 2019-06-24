@@ -6,6 +6,7 @@
 // Components
 @import 'components/buttons.scss';
 @import 'components/navbar2.scss';
+@import 'components/nav-wizard.scss';
 @import 'components/social-networks.scss';
 @import 'components/utilities.scss';
 // Layout
@@ -18,3 +19,4 @@
 // Page
 @import 'page/register.scss';
 @import 'page/register-confirmation.scss';
+@import 'page/create-step.scss';
