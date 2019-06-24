@@ -49,6 +49,9 @@ section {
 		color: $gray-600;
 		@include subhead-font;
 	}
+	&.full-height {
+		height: 100vh;
+	}
 }
 
 @media(min-width: 768px) {

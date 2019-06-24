@@ -8,7 +8,7 @@ block content
                 .col-md-5.col-form.py-5
                     h2.page-heading Get Started
                     .alert.alert-info Get started now for free!
-                    form.form-signin
+                    form(action='register-confirmation.html').form-signin
                         .form-group
                             label(for="email") Email address
                             input(type="email", placeholder="Email address")#email.form-control
@@ -31,5 +31,6 @@ block content
                                 option Option 1
                                 option Option 2
                                 option Option 3
-                        button.btn.btn-lg.btn-primary.btn-block Register Now
-                        a(href="login.html").d-block.text-center.mt-2.small Login
+                        button.btn.btn-primary.btn-lg.btn-block Register Now                    
+                        a(href="login.html").btn.btn-info.btn-lg.btn-block Login
+                        a(href="index.html").d-block.text-center.mt-2.small Cancel
