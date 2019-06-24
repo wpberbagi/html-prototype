@@ -1,0 +1,21 @@
+extends include/layout.pug
+
+block content
+    section#step-4.create-step
+        .container
+            .row
+                .col-lg-8.mx-auto
+                    .card
+                        .card-body
+                            include include/nav-step.pug
+                            form(action="create-step-5.html").form-step
+                                .form-group
+                                    label(for="description") Full description
+                                    textarea#description.form-control
+                                .form-group
+                                    label(for="excerpt") Short description
+                                    textarea#excerpt.form-control
+                                a(href='create-step-3.html').btn.btn-info.btn-lg 
+                                    i.remixicon-arrow-left-line
+                                    | Back
+                                button.btn.btn-primary.btn-lg Continue
