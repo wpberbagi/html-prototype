@@ -1,0 +1,35 @@
+extends include/layout.pug
+
+block content
+    section#register
+        .container-fluid
+            .row
+                .col-md-7
+                .col-md-5.col-form.py-5
+                    h2.page-heading Get Started
+                    .alert.alert-info Get started now for free!
+                    form.form-signin
+                        .form-group
+                            label(for="email") Email address
+                            input(type="email", placeholder="Email address")#email.form-control
+                        .form-group
+                            label(for="password1") Password
+                            input(type="password", placeholder="Password")#password1.form-control
+                        .form-group
+                            label(for="password2") Repeat password
+                            input(type="password", placeholder="Repeat password")#password2.form-control
+                        hr
+                        .form-group
+                            label(for="first_name") First name
+                            input(type="text", placeholder="First name")#first_name.form-control
+                        .form-group
+                            label(for="last_name") Last name
+                            input(type="text", placeholder="Last name")#last_name.form-control
+                        .form-group
+                            label(for="country") Country
+                            select(name='country')#country.form-control
+                                option Option 1
+                                option Option 2
+                                option Option 3
+                        button.btn.btn-lg.btn-primary.btn-block Register Now
+                        a(href="login.html").d-block.text-center.mt-2.small Login
