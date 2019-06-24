@@ -45,3 +45,9 @@
 		}
 	}
 }
+
+.btn-disabled {
+	pointer-events: none;
+	cursor: none;
+	opacity: .5
+}

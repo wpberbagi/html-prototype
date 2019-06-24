@@ -51,6 +51,7 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Input file with image preview
   $('input.input-preview').change(function(){
     var input = this;
     if (input.files && input.files[0]) {
@@ -61,6 +62,17 @@
           image_preview.attr('src', e.target.result).removeClass('d-none');
       };
       reader.readAsDataURL(input.files[0]);
+    }
+  })
+
+  // Accept term of use
+  $('input:checkbox[name=agree]').change(function(){
+    var form_parent = $(this).closest('form'),
+        button = form_parent.find('.btn-create-finish');
+    if($(this).is(":checked")){
+      button.removeClass('btn-disabled');
+    }else{
+      button.addClass('btn-disabled');
     }
   })
 
