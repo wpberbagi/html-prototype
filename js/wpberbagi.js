@@ -37,15 +37,31 @@
 
   // Collapse Navbar
   var navbarCollapse = function () {
-    if ($(".navbar2 .b-container").offset().top > 100) {
-			$(".navbar2 .b-container").addClass("shrink");
-		} else {
-			$(".navbar2 .b-container").removeClass("shrink");
-		}
+    var navbar_container = $(".navbar2 .b-container");
+    if(navbar_container.length){
+      if (navbar_container.offset().top > 100) {
+        navbar_container.addClass("shrink");
+      } else {
+        navbar_container.removeClass("shrink");
+      }
+    }
   };
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  $('input.input-preview').change(function(){
+    var input = this;
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var input_parent = $(input).closest('form'),
+            image_preview = input_parent.find('.image-preview');
+          image_preview.attr('src', e.target.result).removeClass('d-none');
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  })
 
 })(jQuery); // End of use strict

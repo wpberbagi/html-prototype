@@ -1,0 +1,21 @@
+extends include/layout.pug
+
+block content
+    section#step-3.create-step
+        .container
+            .row
+                .col-lg-8.mx-auto
+                    .card
+                        .card-body
+                            include include/nav-step.pug
+                            form(action="create-step-4.html").form-step   
+                                .form-group
+                                    label(for="photo") Photo
+                                    input(type="file")#photo.form-control.input-preview
+                                .form-group
+                                    .text-center
+                                        img.image-preview.d-none.img-fluid                    
+                                a(href='create-step-2.html').btn.btn-info.btn-lg 
+                                    i.remixicon-arrow-left-line
+                                    | Back
+                                button.btn.btn-primary.btn-lg Continue
