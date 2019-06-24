@@ -1,0 +1,29 @@
+extends include/layout.pug
+
+block content
+    section#step-2.create-step
+        .container
+            .row
+                .col-lg-8.mx-auto
+                    .card
+                        .card-body
+                            include include/nav-step.pug
+                            form(action="create-step-3.html").form-step
+                                .form-group
+                                    label(for='target') Target
+                                    .input-group
+                                        .input-group-prepend
+                                            .input-group-text $
+                                        input(type='text')#target.form-control      
+                                .form-group
+                                    label(for="end_time") End time
+                                    select(name='end_time')#end_time.form-control
+                                        option 30 days                          
+                                        option 60 days                          
+                                        option 90 days
+                                .alert.alert-warning Target and End time can not changed in the future.
+                                hr                      
+                                a(href='create-step-1.html').btn.btn-info.btn-lg 
+                                    i.remixicon-arrow-left-line
+                                    | Back
+                                button.btn.btn-primary.btn-lg Continue

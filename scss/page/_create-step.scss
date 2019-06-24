@@ -1,4 +1,7 @@
 section.create-step {
+    background: url('../img/pattern-bg.jpg') center no-repeat scroll;
+    background-size: cover;
+    min-height: 100vh;
     .card {
         @include box-shadow(0, 0, 1rem, 1rem, $gray-100);
         form.form-step {
