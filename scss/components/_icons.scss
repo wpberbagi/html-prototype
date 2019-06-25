@@ -1,0 +1,30 @@
+span.icon {
+    i {
+        font-size: 5rem;
+    }
+    &.icon-primary {
+        i {
+            color: $primary;
+        }
+    }
+    &.icon-success {
+        i {
+            color: $success;
+        }
+    }
+    &.icon-info {
+        i {
+            color: $info;
+        }
+    }
+    &.icon-warning {
+        i {
+            color: $warning;
+        }
+    }
+    &.icon-danger {
+        i {
+            color: $danger;
+        }
+    }
+}

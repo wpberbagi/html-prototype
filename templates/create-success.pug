@@ -1,0 +1,15 @@
+extends include/layout.pug
+
+block content
+    section#step-5.create-step
+        .container
+            .row
+                .col-lg-8.mx-auto.text-center
+                    .card
+                        .card-body
+                            h2.section-heading Campaign Created
+                            span.icon.icon-warning
+                                i.remixicon-error-warning-line
+                            p.lead We have saved your campaign, but it won't be published since you have not confirming your identity yet.
+                            a(href='account-edit.html').btn.btn-primary.btn-lg Confirm My Identity
+                    
