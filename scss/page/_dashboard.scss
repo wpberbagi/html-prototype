@@ -1,5 +1,6 @@
 section.dashboard {
     .col-left {
+        margin-bottom: 3rem;
         .cover {
             height: 200px;
             background: url('../img/pattern1.jpg') center no-repeat scroll;
@@ -15,6 +16,14 @@ section.dashboard {
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    section.dashboard {
+        .col-left {
+            margin-bottom: 0;
         }
     }
 }
