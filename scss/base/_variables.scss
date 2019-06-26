@@ -3,6 +3,8 @@
 // Restated Bootstrap Variables
 
 $white: #fff !default;
+$gray-10: darken($white, 1%) !default;
+$gray-25: darken($white, 2.5%) !default;
 $gray-50: darken($white, 5%) !default;
 $gray-100: darken($gray-50, 10%) !default;
 $gray-150: darken($gray-100, 10%) !default;

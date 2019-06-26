@@ -1,0 +1,44 @@
+extends include/account.pug
+
+block account-detail
+    h3.section-heading Edit Account
+    p.lead You have to use the real data based on your id card.
+    hr
+    form#form_account_edit
+        .form-row
+            .col-md-6.form-group
+                label(for='first_name') First name
+                input(type="text", name='firsts_name')#first_name.form-control
+            .col-md-6.form-group
+                label(for='last_name') Last name
+                input(type="text", name='last_name')#last_name.form-control
+            .col-md-12.form-group
+                label(for='address') Address
+                textarea(name="address", rows="2")#address.form-control
+            .col-md-12.form-group
+                label(for='country') Country
+                select(name="country")#country.form-control
+                    option Country 1
+                    option Country 2
+                    option Country 3
+            .col-md-5.form-group
+                label(for='state') State/Povince
+                select(name="state")#state.form-control
+                    option State 1
+                    option State 2
+                    option State 3
+            .col-md-5.form-group
+                label(for='city') City
+                input(type="text", name='city')#city.form-control
+            .col-md-2.form-group
+                label(for='zip') Zip code
+                input(type="text", name='zip')#zip.form-control
+            .col-md-12.form-group
+                .custom-control.custom-checkbox
+                    input(type="checkbox", name='agree', value='1')#agree.custom-control-input
+                    label(for="agree").custom-control-label By clicking submit i agree to
+                        a(href='page-sample.html')  Terms of Use 
+                        | and
+                        a(href='page-sample.html')  Privacy Policy 
+                        | of WPBerbagi
+        button.btn.btn-primary.btn-lg.btn-create-finish.btn-disabled Save Changes

@@ -137,7 +137,7 @@ function js() {
 function watchFiles() {
 	gulp.watch("./scss/**/*", css);
 	gulp.watch(["./img/*","./img/*/*"], imageminify);
-	gulp.watch(["./templates/*", './templates/*/*'], pugToHtml);
+	gulp.watch(["./templates/*", './templates/*/*', './templates/*/*/*'], pugToHtml);
 	gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
 	gulp.watch("./**/*.html", browserSyncReload);
 }

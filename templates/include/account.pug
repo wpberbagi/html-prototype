@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+    section.dashboard
+        .container
+            .row
+                .col-lg-3.col-left
+                    include dashboard/sidebar.pug
+                .col-lg-9
+                    block account-detail
