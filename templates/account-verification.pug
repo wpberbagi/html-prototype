@@ -1,0 +1,24 @@
+extends include/account.pug
+
+block account-detail
+    h3.section-heading Verification
+    p.lead In order to publish your campaign, you must verify your account that you are representing a real person.
+    hr
+    .row
+        .col-12
+            form(action="create-verification-success.html").form-step 
+                .form-group
+                    label(for="photo_1") Photo of yourself holding id card
+                    input(type="file")#photo_1.form-control
+                .form-group
+                    label(for="photo_2") Photo of your id card
+                    input(type="file")#photo_2.form-control
+                .form-group
+                    .custom-control.custom-checkbox
+                        input(type="checkbox", name='agree', value='1')#agree.custom-control-input
+                        label(for="agree").custom-control-label By clicking submit i agree to
+                            a(href='page-sample.html')  Terms of Use 
+                            | and
+                            a(href='page-sample.html')  Privacy Policy 
+                            | of WPBerbagi
+                button.btn.btn-primary.btn-lg.btn-need-confirm.btn-disabled Request verification

@@ -68,7 +68,7 @@
   // Accept term of use
   $('input:checkbox[name=agree]').change(function(){
     var form_parent = $(this).closest('form'),
-        button = form_parent.find('.btn-create-finish');
+        button = form_parent.find('.btn-need-confirm');
     if($(this).is(":checked")){
       button.removeClass('btn-disabled');
     }else{

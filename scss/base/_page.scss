@@ -47,6 +47,7 @@ section {
 	}
 	p.lead {
 		color: $gray-600;
+		line-height: 1.5;
 		@include subhead-font;
 	}
 	&.full-height {
