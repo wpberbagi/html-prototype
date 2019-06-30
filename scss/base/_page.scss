@@ -34,8 +34,8 @@ h6 {
 section {
 	padding: 40px 0;
 	&.top-bar {
-        margin-top: 56px;
-        padding-top: 15px;
+		margin-top: 56px;
+		padding-top: 15px;
 	}
 	h2.section-heading {
 		font-size: 24px;
@@ -72,7 +72,7 @@ section {
 	}
 }
 
-@media(min-width: 992px){
+@media(min-width: 992px) {
 	section {
 		&.top-bar {
 			margin-top: 70px;
@@ -80,6 +80,7 @@ section {
 		}
 	}
 }
+
 // Highlight color customization
 ::-moz-selection {
 	background: $primary;

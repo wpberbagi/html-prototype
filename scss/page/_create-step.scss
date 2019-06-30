@@ -1,26 +1,26 @@
 section.create-step {
-    background: url('../img/pattern-bg.jpg') center no-repeat scroll;
-    background-size: cover;
-    min-height: 100vh;
-    .card {
-        @include box-shadow(0, 0, 1rem, 1rem, $gray-100);
-        form.form-step {
-            padding: 2rem;
-            .form-group {
-                margin-bottom: 1rem;
-                label {
-                    font-weight: 600;
-                }
-                input,
-                select {
-                    height: 48px;
-                    &::placeholder,
-                    &::-moz-placeholder,
-                    &::-webkit-input-placeholder {
-                        color: $gray-500;
-                    }
-                }
-            }
-        }
-    }
+	background: url('../img/pattern-bg.jpg') center no-repeat scroll;
+	background-size: cover;
+	min-height: 100vh;
+	.card {
+		@include box-shadow(0, 0, 1rem, 1rem, $gray-100);
+		form.form-step {
+			padding: 2rem;
+			.form-group {
+				margin-bottom: 1rem;
+				label {
+					font-weight: 600;
+				}
+				input,
+				select {
+					height: 48px;
+					&::placeholder,
+					&::-moz-placeholder,
+					&::-webkit-input-placeholder {
+						color: $gray-500;
+					}
+				}
+			}
+		}
+	}
 }

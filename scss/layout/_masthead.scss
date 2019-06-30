@@ -5,12 +5,12 @@ header.masthead {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/alexei-scutari-560667-unsplash.jpg');
 	background-position: center center;
 	background-size: cover;
-	&:not(.small){
+	&:not(.small) {
 		min-height: 500px;
 		height: 100vh;
 	}
 	&.small {
-		height: 300px;	
+		height: 300px;
 	}
 	.intro-text {
 		.intro-lead-in {
@@ -53,7 +53,7 @@ header.masthead {
 	}
 }
 
-@media(min-width: 992px){
+@media(min-width: 992px) {
 	header.masthead {
 		.intro-text {
 			.intro-lead-in {

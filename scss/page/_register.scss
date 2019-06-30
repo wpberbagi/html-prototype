@@ -1,32 +1,32 @@
 section#register {
-    margin: 0 auto;
-    padding: 0;
-    background: url('../img/alexei-scutari-560667-unsplash.jpg') center no-repeat fixed;
-    background-size: cover;
-    .container-fluid {
-        .row {
-            .col-form {
-                padding-left: 5rem;
-                padding-right: 5rem;
-                background: $white;
-                .form-signin {                
-                    .form-group {
-                        margin-bottom: 1rem;
-                        input,
-                        select {
-                            height: 48px;
-                            &::placeholder,
-                            &::-moz-placeholder,
-                            &::-webkit-input-placeholder {
-                                color: $gray-500;
-                            }
-                        }
-                        >label {
-                            font-weight: 600;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	margin: 0 auto;
+	padding: 0;
+	background: url('../img/alexei-scutari-560667-unsplash.jpg') center no-repeat fixed;
+	background-size: cover;
+	.container-fluid {
+		.row {
+			.col-form {
+				padding-left: 5rem;
+				padding-right: 5rem;
+				background: $white;
+				.form-signin {
+					.form-group {
+						margin-bottom: 1rem;
+						input,
+						select {
+							height: 48px;
+							&::placeholder,
+							&::-moz-placeholder,
+							&::-webkit-input-placeholder {
+								color: $gray-500;
+							}
+						}
+						> label {
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+	}
 }
