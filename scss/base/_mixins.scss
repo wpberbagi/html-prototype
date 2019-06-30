@@ -31,6 +31,6 @@
 }
 
 @mixin box-shadow($a, $b, $c, $d, $color) {
-	box-shadow: $a $b $c $d $color;
-	-webkit-box-shadow: $a $b $c $d $color;
+	box-shadow: $a $b $c $d rgba($color, .2);
+	-webkit-box-shadow: $a $b $c $d rgba($color, .2);
 }

@@ -1,5 +1,5 @@
 .widget {
-    @include box-shadow(0,.3rem,.5rem,.1rem,$gray-50);
+    @include box-shadow(0,.3rem,.5rem,.1rem,$gray-200);
     font-size: 1.2rem;
     font-weight: 500;
     border: 0;

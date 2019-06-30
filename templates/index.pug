@@ -2,7 +2,7 @@ extends include/layout.pug
 
 block content
   // Navbar
-  include include/navbar.pug
+  include include/navbar1.pug
   // Header
   header.masthead
     .container.h-100
@@ -15,7 +15,7 @@ block content
               a.btn.btn-primary.btn-xl(href='register.html') Get Started Now
               a.btn.btn-outline-info.btn-xl.js-scroll-trigger(href='#campaigns') I Want To Support
   // Campaign
-  section#campaigns
+  section#campaigns.bg-light
     .container
       .row.mb-5
         .col-lg-8.mx-auto.text-center
@@ -76,7 +76,7 @@ block content
             | Browse all
             i.remixicon-arrow-right-s-line
   // About Us
-  section#about-us.bg-light
+  section#about-us.bg-white
     .container
       .row
         .col-lg-5.img-col
@@ -103,7 +103,7 @@ block content
                 i.remixicon-telegram-line
           a(href='about.html').btn.btn-primary.btn-lg Read more
   // Features
-  section#features
+  section#features.bg-light
     .container
       .row.mb-5
         .col-lg-8.mx-auto.text-center
@@ -160,7 +160,7 @@ block content
       .row
         .col.text-center
           a(href='register.html').btn.btn-primary.btn-lg Get Started Now
-  section#get-started.bg-light
+  section#get-started.bg-white
     .container
       .row.align-items-center.justify-content-center
         .col-auto

@@ -1,0 +1,11 @@
+section.campaign-single {
+    .col-left {
+        background-color: $white;
+        img {
+            width: 100%;
+            margin: 15px auto;
+            max-height: 480px;
+            object-fit: cover;
+        }
+    }
+}
