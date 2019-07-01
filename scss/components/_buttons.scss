@@ -1,53 +1,58 @@
 // Button Styles
 .btn-lg,
 .btn-xl {
-	@include heading-font;
+    @include heading-font;
 }
 
 .btn-xl {
-	font-size: 18px;
-	padding: 16px 50px;
-	border-radius: 40px;
+    font-size: 18px;
+    padding: 16px 50px;
+    border-radius: 40px;
 }
 
 .btn-primary {
-	background-color: $primary;
-	border-color: $primary;
-	&:active,
-	&:focus,
-	&:hover {
-		background-color: darken($primary, 7.5%) !important;
-		border-color: darken($primary, 7.5%) !important;
-		color: white;
-	}
-	&:active,
-	&:focus {
-		box-shadow: 0 0 0 0.2rem rgba($primary, .5) !important;
-	}
+    background-color: $primary;
+    border-color: $primary;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: darken($primary, 7.5%) !important;
+        border-color: darken($primary, 7.5%) !important;
+        color: white;
+    }
+
+    &:active,
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba($primary, .5) !important;
+    }
 }
 
 .btn-more {
-	color: $gray-700;
-	padding: 0 1rem;
-	@include transition-all(.2s);
-	i {
-		@include transition-all(.2s);
-		font-size: 1.2rem;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		padding-right: 0;
-		color: $gray-700;
-		text-decoration: none;
-		i {
-			margin-left: 1rem;
-		}
-	}
+    color: $gray-700;
+    padding: 0 1rem;
+    @include transition-all(.2s);
+
+    i {
+        @include transition-all(.2s);
+        font-size: 1.2rem;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        padding-right: 0;
+        color: $gray-700;
+        text-decoration: none;
+
+        i {
+            margin-left: 1rem;
+        }
+    }
 }
 
 .btn-disabled {
-	pointer-events: none;
-	cursor: none;
-	opacity: .5
+    pointer-events: none;
+    cursor: none;
+    opacity: .5
 }

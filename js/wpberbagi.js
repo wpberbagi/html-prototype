@@ -38,7 +38,7 @@
   // Collapse Navbar
   var navbarCollapse = function () {
     var navbar_container = $(".navbar2 .b-container");
-    if(navbar_container.length){
+    if (navbar_container.length) {
       if (navbar_container.offset().top > 100) {
         navbar_container.addClass("shrink");
       } else {
@@ -52,26 +52,26 @@
   $(window).scroll(navbarCollapse);
 
   // Input file with image preview
-  $('input.input-preview').change(function(){
+  $('input.input-preview').change(function () {
     var input = this;
     if (input.files && input.files[0]) {
       var reader = new FileReader();
       reader.onload = function (e) {
         var input_parent = $(input).closest('form'),
-            image_preview = input_parent.find('.image-preview');
-          image_preview.attr('src', e.target.result).removeClass('d-none');
+          image_preview = input_parent.find('.image-preview');
+        image_preview.attr('src', e.target.result).removeClass('d-none');
       };
       reader.readAsDataURL(input.files[0]);
     }
   })
 
   // Accept term of use
-  $('input:checkbox[name=agree]').change(function(){
+  $('input:checkbox[name=agree]').change(function () {
     var form_parent = $(this).closest('form'),
-        button = form_parent.find('.btn-need-confirm');
-    if($(this).is(":checked")){
+      button = form_parent.find('.btn-need-confirm');
+    if ($(this).is(":checked")) {
       button.removeClass('btn-disabled');
-    }else{
+    } else {
       button.addClass('btn-disabled');
     }
   })

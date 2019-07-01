@@ -1,14 +1,15 @@
 section.campaign-single {
-	.col-left {
-		.single-box {
-			padding: 15px;
-			@include border-radius(5px);
-			@include box-shadow(0, 5px, 10px, 2px, $gray-100);
-			img {
-				width: 100%;
-				max-height: 480px;
-				object-fit: cover;
-			}
-		}
-	}
+    .col-left {
+        .single-box {
+            padding: 15px;
+            @include border-radius(5px);
+            @include box-shadow(0, 5px, 10px, 2px, $gray-100);
+
+            img {
+                width: 100%;
+                max-height: 480px;
+                object-fit: cover;
+            }
+        }
+    }
 }

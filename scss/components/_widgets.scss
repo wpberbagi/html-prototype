@@ -1,47 +1,59 @@
 .widget {
-	@include box-shadow(0, .3rem, .5rem, .1rem, $gray-200);
-	font-size: 1.2rem;
-	font-weight: 500;
-	border: 0;
-	border-bottom: 4px solid transparent;
-	margin-bottom: 1rem;
-	display: block;
-	span.value {
-		display: block;
-		font-weight: 700;
-		font-size: 1.5rem;
-	}
-	span.icon {
-		margin-right: 3rem;
-	}
-	&.primary {
-		border-color: $primary;
-		span.icon {
-			color: $primary;
-		}
-	}
-	&.success {
-		border-color: $success;
-		span.icon {
-			color: $success;
-		}
-	}
-	&.info {
-		border-color: $info;
-		span.icon {
-			color: $info;
-		}
-	}
-	&.warning {
-		border-color: $warning;
-		span.icon {
-			color: $warning;
-		}
-	}
-	&.danger {
-		border-color: $danger;
-		span.icon {
-			color: $danger;
-		}
-	}
+    @include box-shadow(0, .3rem, .5rem, .1rem, $gray-200);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 0;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 1rem;
+    display: block;
+
+    span.value {
+        display: block;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    span.icon {
+        margin-right: 3rem;
+    }
+
+    &.primary {
+        border-color: $primary;
+
+        span.icon {
+            color: $primary;
+        }
+    }
+
+    &.success {
+        border-color: $success;
+
+        span.icon {
+            color: $success;
+        }
+    }
+
+    &.info {
+        border-color: $info;
+
+        span.icon {
+            color: $info;
+        }
+    }
+
+    &.warning {
+        border-color: $warning;
+
+        span.icon {
+            color: $warning;
+        }
+    }
+
+    &.danger {
+        border-color: $danger;
+
+        span.icon {
+            color: $danger;
+        }
+    }
 }

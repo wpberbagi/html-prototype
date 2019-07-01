@@ -1,51 +1,59 @@
 #campaigns {
-	.row.campaigns {
-		.campaign-item {
-			padding-bottom: 1rem;
-			margin-bottom: 1rem;
-			.card {
-				@include box-shadow(0, .5rem, .5rem, 0, $gray-100);
-				.card-img-top {
-					height: 200px;
-					object-fit: cover;
-				}
-				.card-body {
-					padding-bottom: 150px;
-					.card-title {
-						line-height: 1.3;
-						font-weight: 500;
-					}
-					.card-text {
-						line-height: 1.5;
-						font-size: 1.1rem;
-					}
-					.bottom-content {
-						position: absolute;
-						left: 1.25rem;
-						bottom: 1.25rem;
-						right: 1.25rem;
-						p.info {
-							text-align: justify;
-							font-size: 1rem;
-							line-height: 1.3;
-							@include narrow-font;
-						}
-						.progress {
-							height: 5px;
-						}
-					}
-				}
-			}
-		}
-	}
+    .row.campaigns {
+        .campaign-item {
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+
+            .card {
+                @include box-shadow(0, .5rem, .5rem, 0, $gray-100);
+
+                .card-img-top {
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .card-body {
+                    padding-bottom: 150px;
+
+                    .card-title {
+                        line-height: 1.3;
+                        font-weight: 500;
+                    }
+
+                    .card-text {
+                        line-height: 1.5;
+                        font-size: 1.1rem;
+                    }
+
+                    .bottom-content {
+                        position: absolute;
+                        left: 1.25rem;
+                        bottom: 1.25rem;
+                        right: 1.25rem;
+
+                        p.info {
+                            text-align: justify;
+                            font-size: 1rem;
+                            line-height: 1.3;
+                            @include narrow-font;
+                        }
+
+                        .progress {
+                            height: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 992px) {
-	#campaigns {
-		.row.campaigns {
-			.campaign-item:last-child {
-				display: none;
-			}
-		}
-	}
+    #campaigns {
+        .row.campaigns {
+            .campaign-item:last-child {
+                display: none;
+            }
+        }
+    }
 }
