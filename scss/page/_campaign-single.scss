@@ -12,4 +12,100 @@ section.campaign-single {
             }
         }
     }
+
+    .col-right {
+        margin-top: 1rem;
+
+        .side-box {
+            padding: 15px;
+            @include border-radius(5px);
+            @include box-shadow(0, 5px, 10px, 2px, $gray-100);
+
+            &.clean {
+                box-shadow: none;
+            }
+
+            h2.amount {
+                font-weight: 500;
+                font-size: 1rem;
+                margin-bottom: .5rem;
+
+                strong {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .progress {
+                height: 10px;
+                margin-bottom: .5rem;
+            }
+
+            >p {
+                line-height: 1;
+                // margin-bottom: 0;
+            }
+        }
+
+        .card.author {
+            .card-body {
+                img {
+                    width: 90px;
+                    height: 90px;
+                    object-fit: cover;
+                    margin-right: 1rem;
+                }
+
+                .details {
+                    a.name {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                    }
+
+                    p.bio {
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    section.campaign-single {
+        .col-right {
+            .side-box {
+                h2.amount {
+                    font-size: 1.5rem;
+                    margin-bottom: .75rem;
+
+                    strong {
+                        font-size: 1.9rem;
+                    }
+                }
+
+                .progress {
+                    margin-bottom: .75rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    section.campaign-single {
+        .col-right {
+            margin-top: 0;
+
+            .side-box {
+                h2.amount {
+                    font-size: 1.1rem;
+
+                    strong {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }

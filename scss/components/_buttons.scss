@@ -1,4 +1,11 @@
 // Button Styles
+
+.btn {
+    i {
+        line-height: 1.5;
+    }
+}
+
 .btn-lg,
 .btn-xl {
     @include heading-font;
