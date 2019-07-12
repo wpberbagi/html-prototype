@@ -41,7 +41,7 @@ block content
                     .side-box.clean
                         p.created.mb-0 Created at 30th June 2018
                     hr.mt-0
-                    .card.author
+                    .card.author.mb-3
                         .card-body.text-center
                             img(src="../img/image2.jpg").img-fluid.rounded.mb-3
                             .details
@@ -50,10 +50,29 @@ block content
                                 .row
                                     .col-auto
                                         i.remixicon-earth-fill
-                                        |  Indonesia    
+                                        |  Indonesia
                                     .col-auto
                                         i.remixicon-calendar-fill
-                                        |  Joined 22nd June 2018  
+                                        |  Joined 22nd June 2018
+                    hr.mt-0
+                    .card.history
+                        .card-body
+                            - for (var x = 0; x < 5; x++)
+                                .history-item
+                                    .row
+                                        .col-auto
+                                            img(src="../img/image2.jpg").img-fluid.rounded-circle.avatar
+                                        .col-auto
+                                            p.amount.mb-0 $17,00
+                                            p.name.mb-0 Abdullah
+                                            p.date.mb-0 20th August 2019
+                                hr.my-2
+                            button.btn.btn-primary.btn-lg.btn-block
+                                i.remixicon-add-fill
+                                |  Load more
+                            button.btn.btn-link.btn-sm.btn-block
+                                i.remixicon-flag-line
+                                |  Report
 
 block footer
     include include/footer.pug
